@@ -1,4 +1,5 @@
-html {
-  background-color: red;
+.container {
+  max-width: 1620px;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
