@@ -1,5 +1,9 @@
-// Сброс стилей s
+
 // Базовая разметка
 @import 'grid.scss';
 
-// 
+//Шрифт
+@import 'font.scss';
+
+// Navbar
+@import 'blocks/navbar';

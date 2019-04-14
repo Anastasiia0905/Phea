@@ -1,0 +1,10 @@
+.navbar {
+    min-height: 150px;
+    &_wrap {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &_logo {
+        margin-right: auto;
+    }
+}

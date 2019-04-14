@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800|Nunito:400,600');
+
+@mixin nunito_sans_extrabold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+@mixin nunito_sans_bold {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+@mixin nunito_sans_regular {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+@mixin nunito_bold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+@mixin nunito_regular {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}

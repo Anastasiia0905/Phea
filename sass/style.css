@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800|Nunito:400,600");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   max-width: 1620px;
   margin: auto;
+}
+
+.navbar {
+  min-height: 150px;
+}
+
+.navbar_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar_logo {
+  margin-right: auto;
 }
 /*# sourceMappingURL=style.css.map */
