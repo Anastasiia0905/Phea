@@ -5,24 +5,83 @@
 }
 
 .container {
-  max-width: 1620px;
+  max-width: 1640px;
   margin: auto;
 }
 
-.navbar {
-  min-height: 150px;
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-all {
+  padding: 20px 50px;
+  border: 3px solid #3984f3;
+  background-color: #3984f3;
+  color: #fff;
+}
+
+.button_navbar {
+  color: #3984f3;
+  background-color: transparent;
 }
 
 .navbar_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
 }
 
 .navbar_logo {
   margin-right: auto;
+}
+
+.navbar_navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  display: block;
+  margin-right: 65px;
+}
+
+.navbar__item a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  color: #bab8b8;
+  font-size: 22px;
+}
+
+.navbar__item a:hover {
+  color: #4497f3;
+}
+
+.hero {
+  min-width: 1180px;
+  position: relative;
+}
+
+.hero__img {
+  position: absolute;
+}
+
+.hero__img_main {
+  top: 10px;
+  right: 0;
+}
+
+.hero__img_secondary {
+  top: 650px;
 }
 /*# sourceMappingURL=style.css.map */

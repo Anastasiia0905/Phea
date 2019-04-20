@@ -1,9 +1,18 @@
 
 // Базовая разметка
 @import 'grid.scss';
+// Цвет
+@import "color.scss";
 
-//Шрифт
+// Шрифт 
 @import 'font.scss';
+// Интерфейс 
+@import 'interface.scss';
+// Цвет
+@import "color.scss";
+
 
 // Navbar
 @import 'blocks/navbar';
+//Hero section
+@import 'blocks/hero';

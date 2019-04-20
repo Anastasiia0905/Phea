@@ -1,0 +1,16 @@
+body {
+     @include nunito_sans_regular;
+}
+a {
+    text-decoration: none;
+}
+.button-all {
+    padding: 20px 50px;
+    border: 3px solid $button-color;
+    background-color: $button-color;
+    color: #fff;
+}
+.button_navbar {
+    color: $button-color;
+    background-color: transparent;
+}

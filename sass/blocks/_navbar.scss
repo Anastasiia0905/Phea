@@ -1,10 +1,27 @@
 .navbar {
-    min-height: 150px;
+    
     &_wrap {
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        min-height: 150px;
     }
     &_logo {
         margin-right: auto;
+    }
+    &_navmenu {
+        display: flex;
+        list-style: none;
+    }
+    &__item{
+        display: block;
+        margin-right: 65px;
+        a {
+           @include nunito_regular;
+            color: $text-color; 
+            font-size: 22px;
+        } 
+        a:hover {
+            color: $accent-color;
+        }
     }
 }
