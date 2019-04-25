@@ -1,5 +1,5 @@
 .hero {
-    min-width: 1180px;
+    min-width: 100vw;
     min-height: 100vh;
     &__img {
        position: absolute;
@@ -27,5 +27,56 @@
         margin: 70px 0 100px 0;
         font-size: 22px;
         color: $text-color;
+    }
+}
+@media (max-width: 1441px){
+    .hero {
+        &__img-main {
+            height: 90%;
+        }
+        &__img-secondary {
+            height: 30%;
+        }
+        &-wrap {
+            max-width: 45%;
+            padding-top: 140px;
+        }
+    }
+}
+@media (max-width: 1025px){
+    .hero {
+        &__img-main {
+            height: 80%;
+        }
+        &__img-secondary {
+            height: 20%; 
+        }
+        &__title {
+            font-size: 56px;
+        }
+        &__description {
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 769px){
+    .hero {
+        &-wrap {
+            padding-top: 100px;
+            padding-left: 0;
+        }
+        &__description {
+            margin: 20px 0;
+        }
+    }
+}
+@media (max-width: 426px){
+    .hero {
+        min-width: 500px;
+        &-wrap {
+            max-width: 100%;
+            padding-top: 550px;
+            text-align: center;
+        }
     }
 }

@@ -2,9 +2,9 @@
     position: fixed;
     background-color: #fff;
     width: 100%;
+    
     &_wrap {
-        
-        width: 1640px;
+        max-width: 100%;
         display: flex;
         align-items: center;
         min-height: 150px;
@@ -26,6 +26,22 @@
         } 
         a:hover {
             color: $accent-color;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .navbar {
+        &_wrap {
+            min-height: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 1025px){
+    .navbar {
+        &_navmenu {
+            display: none;
         }
     }
 }

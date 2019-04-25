@@ -7,4 +7,20 @@
     margin: auto;
     
 }
+@media (max-width: 1700px){
+    .container {
+       padding: 0 80px;
+    }
+}
+@media (max-width: 1441px){
+    .container {
+        min-width: 80vw;
+    }
+}
+@media (max-width: 426px){
+    .container {
+        padding: 0 10px;
+    }
+}
+
 

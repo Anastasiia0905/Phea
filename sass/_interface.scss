@@ -14,3 +14,8 @@ a {
     color: $button-color;
     background-color: transparent;
 }
+@media (max-width: 769px) {
+    .button-all {
+        padding: 10px 30px;
+    }
+}
