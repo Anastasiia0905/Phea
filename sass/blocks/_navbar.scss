@@ -1,6 +1,10 @@
 .navbar {
-    
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
     &_wrap {
+        
+        width: 1640px;
         display: flex;
         align-items: center;
         min-height: 150px;
