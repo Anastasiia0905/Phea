@@ -1,0 +1,27 @@
+.booking {
+    background-color: #1e3d56;
+    background-image: url(/img/booking-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    &__wrap {
+        padding: 300px;
+    }
+    &__text {
+        text-align: center;
+    }
+    &_subtitle {
+        @include nunito_sans_bold;
+        font-size: 39px;
+        text-transform: uppercase;
+    }
+    &_title {
+        @include nunito_sans_extrabold;
+        font-size: 60px;
+    }
+    &__form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
