@@ -9,6 +9,10 @@
   margin: auto;
 }
 
+.section {
+  margin-top: 230px;
+}
+
 @media (max-width: 1700px) {
   .container {
     padding: 0 80px;
@@ -36,7 +40,34 @@ a {
   text-decoration: none;
 }
 
+select {
+  border-radius: 0px !important;
+}
+
+.section-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.section-description {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  color: #bab8b8;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.section-break {
+  display: inline-block;
+  margin: 45px auto;
+  height: 5px;
+  width: 70px;
+  background-color: #3984f3;
+}
+
 .button-all {
+  cursor: pointer;
   padding: 20px 50px;
   border: 3px solid #3984f3;
   background-color: #3984f3;
@@ -196,13 +227,19 @@ a {
 
 @media (max-width: 426px) {
   .hero {
-    min-width: 500px;
+    min-width: 790px;
   }
   .hero-wrap {
     max-width: 100%;
     padding-top: 550px;
     text-align: center;
   }
+}
+
+.features__text {
+  margin: auto;
+  max-width: 1230px;
+  text-align: center;
 }
 
 .booking {
@@ -214,7 +251,7 @@ a {
 }
 
 .booking__wrap {
-  padding: 300px;
+  padding: 300px 0;
 }
 
 .booking__text {
@@ -244,5 +281,63 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.form__input {
+  cursor: pointer;
+  margin-right: 55px;
+  width: 100%;
+  height: 70px;
+  padding: 25px 45px;
+  background: rgba(250, 250, 250, 0.2);
+  border: none;
+  border-radius: none;
+  color: #fff;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 2px solid #3984f3;
+}
+
+.form__button {
+  width: 100%;
+  height: 70px;
+}
+
+@media (max-width: 1025px) {
+  .booking {
+    background-size: cover;
+  }
+  .booking__wrap {
+    padding: 150px 0;
+  }
+  .booking__form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__input, .form__button {
+    margin-right: 0;
+    margin-bottom: 55px;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media (max-width: 769px) {
+  .booking__wrap {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .booking {
+    min-width: 790px;
+  }
+  .form__input, .form__button {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: 0 auto 55px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

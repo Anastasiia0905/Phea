@@ -4,7 +4,28 @@ body {
 a {
     text-decoration: none;
 }
+select {
+    border-radius: 0px !important;
+}
+.section-title {
+    @include nunito_sans_bold;
+    font-size: 50px;
+}
+.section-description {
+    @include nunito_sans_regular;
+    color: $text-color;
+    font-size: 22px;
+    line-height: 35px;
+}
+.section-break {
+    display: inline-block;
+    margin: 45px auto;
+    height: 5px;
+    width: 70px;
+    background-color: $button-color;
+}
 .button-all {
+    cursor: pointer;
     padding: 20px 50px;
     border: 3px solid $button-color;
     background-color: $button-color;
