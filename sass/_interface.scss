@@ -5,9 +5,45 @@ body {
 a {
     text-decoration: none;
 }
+
+.carousel__card {
+    max-width: 375px;
+    overflow: hidden;
+    margin-right: 40px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background: linear-gradient(to top,rgba(52, 72, 78, 1.0),transparent)
+    }
+    &-img {
+        height: 100%;
+       transform: translatex(-30%); 
+        }
+    &-price, &-title {
+        position: absolute;
+        z-index: 15; 
+        font-size: 24px;
+        color: #fff;
+    }
+    &-price {
+        color: #fff;
+        padding: 5px 30px;
+        background-color: $button-color;
+        top: 35px;
+    }
+    &-title {
+        padding-left: 30px;
+        bottom: 35px;
+    }
+    }
 select {
     border-radius: 0px !important;
 }
+
 .section-title {
     @include nunito_sans_bold;
     font-size: 50px;
@@ -37,6 +73,7 @@ select {
     background-color: transparent;
 }
 @media (max-width: 1441px) {
+    
     .section-title {
         margin: 0;
         font-size: 45px;
