@@ -5,4 +5,127 @@
        max-width: 1230px;
        text-align: center;
     }
+    &__video {
+        display: flex;
+        height: 610px;
+        justify-content: space-between;
+        &-frame {
+            flex-basis: 65%;
+            border: none;
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 34%;
+            overflow: scroll;
+        }
+    }
+    &__block {
+        padding: 15px;
+        margin-bottom: 5px;
+        &:hover {
+            background-color: #f0f0f0;
+        }
+        &-item {
+            width: 200px;
+            object-fit: contain;
+            float: left;
+        }
+        
+        &-text, &-time {
+            display: block;
+            position: relative;
+            left: 20px;
+        }
+        &-text {
+            @include nunito_sans_bold;
+            font-size: 26px;
+            color: #000;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        &-time {
+            @include nunito_sans_regular;
+            color: $text-color;
+            font-size: 20px;
+        }
+    }
 }
+@media (max-width: 1441px) {
+    .features {
+        &__video {
+            &-frame {
+                flex-basis: 60%;
+            }
+            &-wrap {
+                flex-basis: 37%;
+            }
+        }
+        &__block {
+            &-text {
+                font-size: 22px;
+            }
+            &-time {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 1025px) {
+    .features {
+        &__video {
+            max-height: 50vh;
+        }
+        &__block {
+            &-item {
+                width: 100%;
+            }
+            &-text, &-time {
+                left: 0;
+                top: 10px;
+            }
+            &-text {
+                font-size: 20px;
+            }
+            &-time {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 769px) {
+    .features {
+        &__video {
+            flex-direction: column;
+            margin-bottom: 70px;
+            &-frame {
+                flex-basis: 100%;
+            }
+            &-wrap {
+                flex-direction: row;
+                flex-basis: 100%;
+                margin-bottom: -50px;
+            }
+        }
+        &__block {
+            &-item {
+                flex-basis: 33%;
+            } 
+            &-text, &-time {
+                left: 0;
+                top: 10px;
+            }
+            &-text {
+                font-size: 16px;
+            }
+            &-time {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 426px) {
+    .features {
+        min-width: 790px;
+    }
+} 

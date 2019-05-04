@@ -34,6 +34,7 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
+  font-size: 10px;
 }
 
 a {
@@ -79,9 +80,34 @@ select {
   background-color: transparent;
 }
 
+@media (max-width: 1441px) {
+  .section-title {
+    margin: 0;
+    font-size: 45px;
+  }
+  .section-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .section-break {
+    margin: 40px auto;
+  }
+}
+
 @media (max-width: 769px) {
   .button-all {
     padding: 10px 30px;
+  }
+  .section-title {
+    margin: 0;
+    font-size: 35px;
+  }
+  .section-description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .section-break {
+    margin: 20px auto;
   }
 }
 
@@ -240,6 +266,152 @@ select {
   margin: auto;
   max-width: 1230px;
   text-align: center;
+}
+
+.features__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 610px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features__video-frame {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  border: none;
+}
+
+.features__video-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 34%;
+      flex-basis: 34%;
+  overflow: scroll;
+}
+
+.features__block {
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.features__block:hover {
+  background-color: #f0f0f0;
+}
+
+.features__block-item {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  float: left;
+}
+
+.features__block-text, .features__block-time {
+  display: block;
+  position: relative;
+  left: 20px;
+}
+
+.features__block-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.features__block-time {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  color: #bab8b8;
+  font-size: 20px;
+}
+
+@media (max-width: 1441px) {
+  .features__video-frame {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .features__video-wrap {
+    -ms-flex-preferred-size: 37%;
+        flex-basis: 37%;
+  }
+  .features__block-text {
+    font-size: 22px;
+  }
+  .features__block-time {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .features__video {
+    max-height: 50vh;
+  }
+  .features__block-item {
+    width: 100%;
+  }
+  .features__block-text, .features__block-time {
+    left: 0;
+    top: 10px;
+  }
+  .features__block-text {
+    font-size: 20px;
+  }
+  .features__block-time {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .features__video {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .features__video-frame {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .features__video-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: -50px;
+  }
+  .features__block-item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .features__block-text, .features__block-time {
+    left: 0;
+    top: 10px;
+  }
+  .features__block-text {
+    font-size: 16px;
+  }
+  .features__block-time {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 426px) {
+  .features {
+    min-width: 790px;
+  }
 }
 
 .booking {
