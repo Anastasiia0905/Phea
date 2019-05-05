@@ -1,0 +1,32 @@
+body {
+     @include nunito_sans_regular;
+     font-size: 10px;
+}
+a {
+    text-decoration: none;
+}
+
+select {
+    border-radius: 0px !important;
+}
+
+
+.button-all {
+    cursor: pointer;
+    padding: 20px 50px;
+    border: 3px solid $button-color;
+    background-color: $button-color;
+    color: #fff;
+}
+.button_navbar {
+    color: $button-color;
+    background-color: transparent;
+}
+@media (max-width: 1441px) {
+    
+}
+@media (max-width: 769px) {
+    .button-all {
+        padding: 10px 30px;
+    }
+}

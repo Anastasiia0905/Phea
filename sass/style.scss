@@ -7,7 +7,9 @@
 // Шрифт 
 @import 'font.scss';
 // Интерфейс 
-@import 'interface.scss';
+@import 'interface/interface.scss';
+@import 'interface/sectionText';
+@import 'interface/carouselCard';
 // Цвет
 @import "color.scss";
 

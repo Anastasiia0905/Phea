@@ -55,6 +55,7 @@
     .features {
         &__video {
             &-frame {
+                max-height: 500px;
                 flex-basis: 60%;
             }
             &-wrap {
@@ -74,11 +75,13 @@
 @media (max-width: 1025px) {
     .features {
         &__video {
-            max-height: 50vh;
+            max-height: 40vh;
         }
         &__block {
+            height: 50%;
             &-item {
                 width: 100%;
+                max-width: 75px;
             }
             &-text, &-time {
                 left: 0;
@@ -95,11 +98,14 @@
 }
 @media (max-width: 769px) {
     .features {
+        min-width: 100vw;
         &__video {
+            max-height: 100vh;
             flex-direction: column;
             margin-bottom: 70px;
             &-frame {
                 flex-basis: 100%;
+                min-height: 50vh;
             }
             &-wrap {
                 flex-direction: row;
@@ -126,6 +132,6 @@
 }
 @media (max-width: 426px) {
     .features {
-        min-width: 790px;
+        //min-width: 790px;
     }
 } 

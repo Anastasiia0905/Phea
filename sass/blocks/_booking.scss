@@ -71,15 +71,10 @@
             padding: 50px 0;
         }
     }
-}
-@media (max-width: 426px) {
-    .booking {
-        min-width: 790px;
-    }
     .form {
         &__input, &__button {
-            flex-basis: 90%;
-            margin: 0 auto 55px;
+            flex-basis: 100%;
         }
     }
 }
+

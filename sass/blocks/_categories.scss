@@ -1,0 +1,19 @@
+.categories {
+    &__text {
+        margin: auto;
+       max-width: 1230px;
+       text-align: center;
+    }
+    &__carousel {
+        display: flex;
+        
+    }
+}
+@media (max-width: 426px){
+    .categories {
+        &__carousel {
+            overflow: scroll;
+        }
+        
+    }
+}

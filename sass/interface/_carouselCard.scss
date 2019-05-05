@@ -1,0 +1,74 @@
+.carousel__card {
+    width: 100%;
+    max-height: 60vh;
+    overflow: hidden;
+    margin-right: 40px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background: linear-gradient(to top,rgba(52, 72, 78, 1.0),transparent)
+    }
+    &_thin {
+        max-width: 375px;
+    }
+    &_thin > &-img {
+        height: 100%;
+        object-fit: cover;
+        transform: translatex(-30%); 
+    }
+    &_fat{
+        width: 485px;
+        height: 460px;
+    }
+    &_fat  > &-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &_fat > &-title {
+        left: 0;
+    }
+    &-price, &-title {
+        position: absolute;
+        z-index: 15; 
+        font-size: 24px;
+        color: #fff;
+    }
+    &-price {
+        color: #fff;
+        padding: 5px 30px;
+        background-color: $button-color;
+        top: 35px;
+    }
+    &-title {
+        padding-left: 30px;
+        bottom: 35px;
+    }
+}
+@media (max-width: 769px) {
+    .carousel__card {
+        max-height: 200px;
+        margin-right: 5px;
+        &-price, &-title {
+            font-size: 14px;
+        }
+        &-price {
+            top: 15px;
+            padding: 5px 10px;
+        }
+        &-title {
+            padding-left: 10px;
+            bottom: 20px;
+        }
+    }
+}
+@media (max-width: 426px){
+    .carousel__card {
+        min-width: 40%;
+    
+    }
+}
