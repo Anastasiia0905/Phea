@@ -2,7 +2,7 @@
     position: fixed;
     background-color: #fff;
     width: 100%;
-    
+    z-index: 99999;
     &_wrap {
         max-width: 100%;
         display: flex;

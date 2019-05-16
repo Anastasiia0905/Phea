@@ -13,6 +13,9 @@
 // Цвет
 @import "color.scss";
 
+@import "slick-theme";
+@import "slick";
+
 
 //Section
 @import 'blocks/navbar';
@@ -27,3 +30,6 @@
 
 @import 'blocks/booking';
 
+@import 'blocks/feedback';
+
+@import 'blocks/footer';
