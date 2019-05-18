@@ -1,6 +1,7 @@
 .categories {
     overflow: hidden;
-    
+    position: relative;
+    padding-bottom: 100px;
     &__text {
         margin: auto;
        max-width: 1230px;
@@ -8,7 +9,26 @@
     }
     &__carousel {
         display: flex;
+        position: relative;
         margin-left: -250px;
+    }
+    &__arrows {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 110%;
+        left: 5%;
+    }
+    &__arrow_prev {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 426px) {
+    .categories {
+        &__arrows {
+            display: none;
+        }
     }
 }
 @media (max-width: 426px){

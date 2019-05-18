@@ -1,21 +1,30 @@
 
 
 .carousel__card {
-    min-height: 0;
-  min-width: 0;
-    width: 100%;
-    max-height: 60vh;
-    overflow: hidden;
-    margin-right: 40px;
     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 10;
-        background: linear-gradient(to top,rgba(52, 72, 78, 1.0),transparent)
+    overflow: hidden;
+    width: 80%;
+    min-width: 0;
+    min-height: 0;
+    max-height: 60vh;
+    margin-top: 80px;
+    margin-right: 40px;
+    transition: .5s ease-out;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-80px);
+        transition: 0.5s ease-out;
     }
+    &::before {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: linear-gradient(to top,rgba(52, 72, 78, 1.0),transparent);
+    }
+
+    
     &_thin {
         max-width: 375px;
     }
@@ -57,6 +66,10 @@
     .carousel__card {
         max-height: 200px;
         margin-right: 5px;
+        margin-top: 50px;
+        &:hover {
+            transform: translateY(-50px);
+        }
         &-price, &-title {
             font-size: 14px;
         }
@@ -73,6 +86,5 @@
 @media (max-width: 426px){
     .carousel__card {
         min-width: 40%;
-    
     }
 }
