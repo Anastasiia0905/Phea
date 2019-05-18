@@ -1,15 +1,17 @@
 .feedback {
-    &__text {
-        margin: 0 auto;
-        max-width: 1230px;
-        text-align: center;
-    }
-    &-slider {
-        display: flex;
-        flex-direction: column;
-       align-items: center;
+    position: relative;
+    max-width: 1230px;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align: center;
+    &__slider {
+        &-wrap {
+            position: relative;
+            margin: 0 auto;
+            max-width: 450px;
+        }
         &_img {
-            display: block;
+            display: inline-block !important;
             margin: 40px;
             border-radius: 50%;
             width: 110px;
@@ -18,10 +20,46 @@
         }
         &_name {
             @include nunito_sans_bold;
+            display: block;
             font-size: 24px;
         }
         &_prof {
             font-size: 20px;
+
         }
     }
 }
+.feedback__arrows {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-150%);
+}
+.feedback__arrow {
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        transform: scale(1.2);
+        transition-duration: 1.5ms;
+    }
+}
+.slick-dots {
+    margin-bottom: -50px;
+}
+.slick-dots li {
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+}
+.slick-dots li button:before {
+    content: url(/img/slide-dot.png);
+   
+}
+
+.slick-dots li.slick-active button:before {
+    content: url(/img/slide-dot-active.png);
+}
+

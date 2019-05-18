@@ -1,4 +1,6 @@
 .categories {
+    overflow: hidden;
+    
     &__text {
         margin: auto;
        max-width: 1230px;
@@ -6,7 +8,7 @@
     }
     &__carousel {
         display: flex;
-        
+        margin-left: -250px;
     }
 }
 @media (max-width: 426px){
