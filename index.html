@@ -20,6 +20,9 @@
                         <li class="navbar__item"><a href="#">Destitation</a></li>
                         <li class="navbar__item"><a href="#">Booking</a></li>
                     </ul>
+                    <div class="nav-toggle">
+                        <div class="nav-toggle-bar"></div>
+                    </div>
                     <button class="button-all button_navbar">Sing In</button>
                 </div>
             </div>
@@ -209,17 +212,7 @@
          </div>
          
     </section>
-    <!---<section class="turn-section">
-       
-        <div class="turn">
-            <div class="card"><img src="img/cat-1.jpg" alt=""></div>
-            <div class="card"><img src="img/cat-1.jpg" alt=""></div>
-            <div class="card"><img src="img/cat-1.jpg" alt=""></div>
-            <div class="card"><img src="img/cat-1.jpg" alt=""></div>
-            <div class="card"><img src="img/cat-1.jpg" alt=""></div>
-        </div>
-        
-    </section>  -->
+   
     <section class="booking section">
         <div class="container">
             <div class="booking__wrap">
@@ -229,6 +222,7 @@
                 </div>
                 <form action="#" class="form booking__form">
                     <div class="booking__form-group">
+                        
                         <select class="input form__input" name="destination">
                             <option value="value1" selected>Destinations</option>
                             <option value="value2">Destinations2</option>
@@ -280,6 +274,10 @@
                 nextArrow: $('.feedback__arrow_next'),
                 dots: true
                 
+            });
+            $('.nav-toggle').on('click', function(){
+                $('.navbar_navmenu').toggleClass("expanted");
+                $('.nav-toggle').toggleClass("expanted");
             })
         }); 
         /*              

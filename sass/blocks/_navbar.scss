@@ -3,6 +3,7 @@
     background-color: #fff;
     width: 100%;
     z-index: 99999;
+    font-size: 22px;
     &_wrap {
         max-width: 100%;
         display: flex;
@@ -16,13 +17,14 @@
         display: flex;
         list-style: none;
     }
+    
     &__item{
         display: block;
         margin-right: 65px;
+        margin-top: 25px;
         a {
            @include nunito_regular;
             color: $text-color; 
-            font-size: 22px;
         } 
         a:hover {
             color: $accent-color;
@@ -31,6 +33,7 @@
 }
 @media (max-width: 1440px) {
     .navbar {
+        font-size: 18px;
         &_wrap {
             min-height: 100%;
             padding-top: 10px;
@@ -38,11 +41,27 @@
         }
     }
 }
-@media (max-width: 1025px){
+@media (max-width: 726px){
     .navbar {
         &_navmenu {
-            display: none;
+            position: absolute;
+            z-index: 199;
+            top: -40%;
+            right: -100%;
+            flex-direction: column;
+            min-width: 30vw;
+            height: 100vh;
+            padding-top: 50px;
+            transition: right .6s;
+            background: #eef5f4;
+            a {
+                color: $button-color;
+            }
         }
+        &_navmenu.expanted {
+            right: 0;
+        }
+
     }
 }
 @media (max-width: 426px){
