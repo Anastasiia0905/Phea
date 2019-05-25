@@ -7,6 +7,7 @@
     <title>Phea</title>
     <link rel="stylesheet" href="sass/normalize.css">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/selectric.css">
 </head>
 <body>
     <header class="header">
@@ -222,7 +223,28 @@
                 </div>
                 <form action="#" class="form booking__form">
                     <div class="booking__form-group">
-                        
+                       <!-- <div class="input form__input">
+                            <input type="hidden" name="type" name="type">
+                            <div class="select form__select">
+                                <div class="select__checked">Destinations</div>
+                                <ul class="select__dropdown">
+                                    <li>Destinations1</li>
+                                    <li>Destinations2</li>
+                                    <li>Destinations3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input form__input">
+                            <input type="hidden" name="type" name="type">
+                            <div class="select form__select">
+                                <div class="select__checked">Package</div>
+                                <ul class="select__dropdown">
+                                    <li>Package1</li>
+                                    <li>Package2</li>
+                                    <li>Package3</li>
+                                </ul>
+                            </div>
+                        </div>-->
                         <select class="input form__input" name="destination">
                             <option value="value1" selected>Destinations</option>
                             <option value="value2">Destinations2</option>
@@ -264,10 +286,12 @@
         </div>
     </footer>
     <!---<script type="text/javascript" src="https://spikmi.com/Widget?Id=735"></script>-->
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.js"></script>
     <script>
         $(document).ready(function(){
+            //carousel
             $('.feedback__slider').slick({
                 arrows: true,
                 prevArrow: $('.feedback__arrow_prev'),
@@ -275,10 +299,12 @@
                 dots: true
                 
             });
+            //burger menu
             $('.nav-toggle').on('click', function(){
                 $('.navbar_navmenu').toggleClass("expanted");
                 $('.nav-toggle').toggleClass("expanted");
-            })
+            });
+           
         }); 
         /*              
   dots: false,
